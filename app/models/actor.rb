@@ -11,6 +11,9 @@
 #  updated_at :datetime         not null
 #
 class Actor < ApplicationRecord
+
+# This is a one to many. I look in the Actor table and take my actor ID and find where it matched Actor ID in the Character table.
+
   def characters
     my_id = self.id
 

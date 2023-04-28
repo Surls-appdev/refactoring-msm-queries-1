@@ -99,7 +99,7 @@
       </td>
 
       <td>
-        <% d_id = the_movie.director.name %>
+        <% d_id = a_character.movie.director_id %>
         
         <% matching_directors = Director.where({ :id => d_id }) %>
         
@@ -113,7 +113,7 @@
       </td>
 
       <td>
-        <a href="/movies/<%= the_movie.id %>">
+        <a href="/movies/<%= a_character.movie.id %>">
           Show details
         </a>
       </td>

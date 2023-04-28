@@ -13,6 +13,9 @@
 #  director_id :integer
 #
 class Movie < ApplicationRecord
+
+# this converts from movie table, anything from the associated director table. just use "director". For example, @the_movie.director.name
+
   def director
     d_id = self.director_id
 

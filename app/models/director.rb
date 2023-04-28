@@ -11,6 +11,9 @@
 #  updated_at :datetime         not null
 #
 class Director < ApplicationRecord
+
+#This takes my Director ID, looks in the Movie table, anything that has my director's id. So, a filmography. So I can do @the_director.filmography.year or filmography.duration, or anything from the movie table.
+
   def filmography
     my_id = self.id
 
